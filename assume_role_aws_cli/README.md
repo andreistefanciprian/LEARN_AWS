@@ -35,7 +35,7 @@ aws sts get-caller-identity
 aws s3 ls
 
 # assume role
-aws sts assume-role --role-arn "arn:aws:iam::961857703676:role/test-role" --role-session-name jenkins
+aws sts assume-role --role-arn "arn:aws:iam::961857703676:role/test-role" --role-session-name jenkins --duration-seconds 900
 
 aws iam list-roles 
 
